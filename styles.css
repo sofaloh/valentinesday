@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
+    z-index: 9999;
 }
 
 .heart {
@@ -126,67 +127,49 @@ body {
     top:70%;
     position: fixed;
 }
-/* Для экранов меньше 768px */
 @media (max-width: 768px) {
     .nadpis {
-        font-size: 20px; /* Уменьшаем размер шрифта */
+        font-size: 20px; 
     }
-
     .foto img {
-        max-width: 80%; /* Уменьшаем ширину изображения */
-        height: auto;
+        max-width: 150px; 
     }
-
     .fuu, .dotacring {
-        width: 30%; /* Уменьшаем размеры этих элементов */
+        width: 25%; 
     }
-
-    .fuu {
-        left: 10%;
-    }
-
-    .dotacring {
-        left: 70%;
-    }
-
     #imaga {
-        max-width: 250px; /* Уменьшаем размеры изображения */
+        max-width: 270px; 
     }
-
-    /* Уменьшаем надписи и другие блоки, чтобы они подстраивались */
     #nazmi {
         font-size: 16px;
     }
-
     #label {
         font-size: 16px;
+    }
+    #vidosik{
+        width: 110px;
     }
 }
-
-/* Для экранов меньше 480px */
 @media (max-width: 480px) {
     .nadpis {
-        font-size: 15px; /* Еще больше уменьшаем размер шрифта */
+        font-size: 12px; 
     }
-
     .foto img {
-        max-width: 70%; /* Еще больше уменьшаем изображения */
-        height: auto;
+        max-width: 120px; 
     }
-
     .fuu, .dotacring {
-        width: 40%; /* Уменьшаем элементы */
+        width: 30%; 
     }
-
     #imaga {
-        max-width: 220px; /* Уменьшаем изображения */
+        max-width: 220px;
     }
-
     #nazmi {
         font-size: 14px;
     }
-
     #label {
         font-size: 14px;
+    }
+    #vidosik{
+        width: 90px;
     }
 }
