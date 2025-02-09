@@ -12,7 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 0;
 }
 
 .heart {
@@ -72,27 +72,29 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-.fuu{
-   float: left; 
-   position:fixed;
-    top: 14%;
-    left: -20%;
-    transform: translate(-50%, -50%);  
-    z-index: 1;
-}
-.dotacring{
-    float: right;
-    position:fixed;
-    width: 40%;
-    top: 40%;
-    left: 106%;
-    transform: translate(-50%, -50%);  
-    z-index: 1;
-}
+.fuu img{
+    float: left; 
+    position:absolute;
+     top: 17%;
+     left: -20%;
+     transform: translate(-50%, -50%); 
+     z-index: 1;
+     width: 60%;
+ }
+ .dotacring img{
+     float: right;
+     position:absolute;
+     width: 15%;
+     top: 45%;
+     left: 92.5%;
+     transform: translate(-50%, -50%);  
+     z-index: 1;
+ }
 #label{
     font-size: 20px;
     position: fixed;
-    bottom: 0%;
+    background-color: #ffcacd; 
+    bottom: -3%;
     left: 53%; 
     transform: translate(-50%, -50%);
     visibility: hidden;
@@ -124,52 +126,43 @@ body {
     z-index: 2;
 }
 #vidosik{
-    top:70%;
+    top:67%;
     position: fixed;
 }
-@media (max-width: 768px) {
-    .nadpis {
-        font-size: 20px; 
-    }
-    .foto img {
-        max-width: 150px; 
-    }
-    .fuu, .dotacring {
-        width: 25%; 
-    }
-    #imaga {
-        max-width: 270px; 
-    }
-    #nazmi {
-        font-size: 16px;
-    }
-    #label {
-        font-size: 16px;
-    }
-    #vidosik{
-        width: 110px;
-    }
-}
 @media (max-width: 480px) {
-    .nadpis {
-        font-size: 12px; 
+    .nadpis{
+        font-size: 17px;
     }
     .foto img {
-        max-width: 120px; 
+        max-width: 300px; 
     }
-    .fuu, .dotacring {
-        width: 30%; 
+    .fuu img{
+        width: 105% !important;
+        left: -32%;
+        top: 11%;
+        transform: translate(-50%, -50%);
+    }
+    .dotacring img{
+        width: 53% !important;
+        left: 100%;
+        top: 35%;
+        transform: translate(-50%, -50%);
     }
     #imaga {
-        max-width: 220px;
+        max-width: 300px;
     }
     #nazmi {
-        font-size: 14px;
+        font-size: 16px;
     }
     #label {
-        font-size: 14px;
+        font-size: 19px;
+        bottom: -5%;
     }
     #vidosik{
-        width: 90px;
+        top: 74%;
+        max-width: 105px;
+    }
+    .hearts img{
+        width: 10%;
     }
 }
