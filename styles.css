@@ -91,15 +91,15 @@ body {
      z-index: 1;
  }
 #label{
-    font-size: 20px;
+    font-size: 27px;
     position: fixed;
     background-color: #ffcacd; 
-    bottom: -3%;
+    bottom: 18%;
     left: 53%; 
     transform: translate(-50%, -50%);
     visibility: hidden;
 }
-#imaga {
+.imaga img {
     position: fixed;
     top: 50%;
     left: 53%;
@@ -126,10 +126,24 @@ body {
     z-index: 2;
 }
 #vidosik{
-    top:67%;
+    top:72%;
     position: fixed;
+    z-index: 5;
+}
+#lilpeep{
+    width: 250px;
+    top: 90%;
+    position:fixed;
+    left: 53%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    visibility: hidden;
 }
 @media (max-width: 480px) {
+    .congratulation{
+        top:35%;
+        left:56%;
+    }
     .nadpis{
         font-size: 17px;
     }
@@ -137,32 +151,38 @@ body {
         max-width: 300px; 
     }
     .fuu img{
-        width: 105% !important;
-        left: -32%;
+        width: 125% !important;
+        left: -39%;
         top: 11%;
         transform: translate(-50%, -50%);
     }
     .dotacring img{
-        width: 53% !important;
-        left: 100%;
+        width: 50% !important;
+        left: 112%;
         top: 35%;
         transform: translate(-50%, -50%);
     }
-    #imaga {
-        max-width: 300px;
+    .imaga img{
+        width: 70%;
+        top: 30%;
     }
     #nazmi {
         font-size: 16px;
     }
     #label {
-        font-size: 19px;
-        bottom: -5%;
+        font-size: 15px;
+        bottom: 17%;
     }
     #vidosik{
-        top: 74%;
+        top: 61%;
         max-width: 105px;
+        left:15%;
     }
     .hearts img{
         width: 10%;
+    }
+    #lilpeep{
+        top:85%;
+        width:130px;
     }
 }
