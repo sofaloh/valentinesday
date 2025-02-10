@@ -48,6 +48,7 @@ let audioStopped = false;
           function myHandler(e) {
             peep.style.visibility = "visible";
             peep.controls = false;
+            peep.muted = false;
             peep.play();
             peep.loop = true;
             let p = document.getElementById("label");
