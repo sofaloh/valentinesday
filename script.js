@@ -41,10 +41,17 @@ let audioStopped = false;
           video.controls = false;
           video.autoplay = true;
           video.style.width = "130px";
-          video.loop = true;
+          let peep = document.getElementById("lilpeep");
           img.replaceWith(video);
-          let p = document.getElementById("label");
+          video.addEventListener('ended',myHandler,false);
+          function myHandler(e) {
+            peep.style.visibility = "visible";
+            peep.controls = false;
+            peep.play();
+            peep.loop = true;
+            let p = document.getElementById("label");
           p.style.visibility = "visible";
+          }
           let imaga = document.getElementById("imaga");
           imaga.style.visibility = "visible";
           let label = document.getElementById("nazmi");
