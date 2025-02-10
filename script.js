@@ -42,6 +42,7 @@ let audioStopped = false;
           video.autoplay = true;
           video.style.width = "130px";
           let peep = document.getElementById("lilpeep");
+            peep.pause();
           img.replaceWith(video);
           video.addEventListener('ended',myHandler,false);
           function myHandler(e) {
